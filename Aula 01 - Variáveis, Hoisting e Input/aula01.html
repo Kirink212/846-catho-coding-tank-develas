@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 01 - Variáveis, Hoisting e Input/Output</title>
+</head>
+<body>
+    <script>
+        // var idade; -> HOISTING (ELEVAÇÃO DA DECLARAÇÃO)
+        /*
+            Comentário
+            em
+            múltiplas
+            linhas
+        */
+        // Comentário em linha única
+
+        // console.log(nome); -> VAI DAR ERRO, "VARIABLE NOT DEFINED"
+
+        console.log(idade); // undefined
+
+        var idade = 25;
+        console.log(idade);
+
+        // Números e operações aritméticas
+        idade = idade + 1;
+        console.log(idade);
+        console.log(idade - 2);
+        console.log(idade); // não houve atribuição
+        console.log(idade * 3);
+        console.log(idade / 13);
+        console.log(idade % 2);
+        console.log(4 ** 2);
+        console.log(5 ** (1/2)); // raiz improvisada
+
+        // Strings
+        console.log("Oi, tudo bem?");
+        console.log('Sim, tudo certo!');
+        console.log(`A minha idade é: ${idade}`);
+        console.log("A minha idade é:", idade);
+        console.log("A minha idade é: " + idade);
+
+        // Booleanas
+        console.log(true);
+        console.log(false);
+
+        // Uso do let e const - VAR NUNCA MAIS!!!!
+        // console.log(idade2); -> ERROU, ELE NÃO ACERTOU!
+        let idade2;
+        console.log(idade2);
+        idade2 = 28;
+        console.log(idade2);
+
+        const PI = 3.14159;
+        console.log(PI);
+
+        // const TAMANHO; -> NO PUEDE, NO, NO, NO
+        // PI = 3.141592654; -> NÃO PODE TAMBIÉN
+    </script>
+</body>
+</html>
